@@ -1,3 +1,9 @@
+New Page:
+
+```latex
+\newpage
+```
+
 Bullet List:
 
 ```latex
