@@ -40,7 +40,7 @@ Footnote:
 ```
 
 Equations:
-		```latex
+```latex
 		\begin{equation}
 		 L_{\mu H} = s \times 0.008 \left[ ln \left( \frac{s \times 1.414}{2 d} \right) + 0.379 \right]
 		 \label{eq:inductance}
