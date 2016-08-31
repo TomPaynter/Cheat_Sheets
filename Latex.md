@@ -69,4 +69,22 @@ Equations:
 		 \end{equation}
 	  	
 		  
+		  
   ```
+  
+  Tables!
+  
+```latex
+  
+		\begin{table}[]
+		\centering
+		\caption{Loop Measurements}
+		\label{measurements}
+		\begin{tabular}{|c|c|c|}
+		\hline
+		Condition               & Inductance & Q Factor \\ \hline
+		Short Leads ($\sim$5 cm) & 1.9        & 0.0064   \\ \hline
+		Long Leads($\sim$50 cm)  & 2.8        & 0.52     \\ \hline
+		\end{tabular}
+		\end{table}
+```
