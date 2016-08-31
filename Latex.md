@@ -38,3 +38,20 @@ Footnote:
 		\footnote{footnotes working fine}
 		
 ```
+
+Equations:
+		```latex
+		\begin{equation}
+		 L_{\mu H} = s \times 0.008 \left[ ln \left( \frac{s \times 1.414}{2 d} \right) + 0.379 \right]
+		 \label{eq:inductance}
+		 \end{equation}
+		
+		Where:
+		
+		  \begin{description}
+		  \item[] $L_{\mu H}$ is the inductance of the coil
+		  \item[] $s$ is the side length, in cm
+		  \item[] $d$ is the diameter of the antenna conductor, in cm
+		  \end{description}
+		  
+  ```
