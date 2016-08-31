@@ -54,4 +54,10 @@ Equations:
 		  \item[] $d$ is the diameter of the antenna conductor, in cm
 		  \end{description}
 		  
+	  	Refferring to it again!
+		 L_{\mu H} = 123
+		 \tag{\ref{eq:inductance}}
+		 \end{equation}
+	  	
+		  
   ```
