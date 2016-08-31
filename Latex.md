@@ -55,9 +55,12 @@ Equations:
 		Where:
 		
 		  \begin{description}
+		  \setlength{\leftskip}{3cm}
 		  \item[] $L_{\mu H}$ is the inductance of the coil
 		  \item[] $s$ is the side length, in cm
 		  \item[] $d$ is the diameter of the antenna conductor, in cm
+		  
+		  \setlength{\leftskip}{0cm}
 		  \end{description}
 		  
 	  	Refferring to it again!
