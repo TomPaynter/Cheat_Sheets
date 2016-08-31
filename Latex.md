@@ -25,6 +25,7 @@ Full Size Picture:
 
 ```latex
 		\begin{figure}[h]
+		\centering
 		\includegraphics[width=\textwidth]{./Final.png}
 		\caption{The Final Prototype}
 		\label{fig:Final}
