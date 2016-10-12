@@ -11,7 +11,7 @@ Read Files
 dataset1 = numpy.genfromtxt('file.csv', delimiter=',', usecols= 1, skip_header=1)
 dataset2 = numpy.genfromtxt('file.csv', delimiter=',', usecols= 2, skip_header=1)
 ```
-
+Generic Plotting:
 ```python
 
 plt.close(1)
