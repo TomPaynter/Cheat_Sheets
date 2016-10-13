@@ -19,3 +19,10 @@ Read 100 bytes from serial or until timeout occurs:
 ```python
 mydatastring = ser.read(100)
 ```
+
+Read a line. There is no way to change the default EOL character, someone thought that it would be useful..... Anyway note that there is no arguements.
+
+
+```python
+mydataline = ser.readline()
+```
