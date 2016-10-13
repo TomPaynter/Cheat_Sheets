@@ -12,3 +12,10 @@ newdata = numpy.genfromtxt('cheekydata.txt', comments='#', dtype=str)
 ```
 
 
+# Slicing
+
+This gets the first 5 characters of a string. Noting that the last is not inclusive
+
+```python
+mydatastring[0:6]
+```
