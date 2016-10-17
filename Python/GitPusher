@@ -1,0 +1,15 @@
+#!/Library/Frameworks/Python.framework/Versions/2.7/bin/python
+
+import os
+import sys
+
+print "Cheeky GitPusher Activate!"
+
+os.system("git add ./")
+
+if len(sys.argv) > 1:
+    os.system('git commit -m "' + str(sys.argv[1]) + '"')
+else:
+    os.system('git commit -m "Routine"')
+
+os.system('git push origin master')
