@@ -5,8 +5,9 @@ function help() {
   echo "A hack script for working with mdbook :)"
   echo
   echo "USAGE: ./build.sh build"
-  echo "USAGE: ./build.sh serve"
-  echo "USAGE: ./build.sh [-h|--help]"
+  echo "       ./build.sh serve"
+  echo "       ./build.sh travis-auth-help"
+  echo "       ./build.sh [-h|--help]"
   exit 1
 }
 
@@ -39,6 +40,17 @@ function check_dependencies() {
 }
 
 
+function travis_auth() {
+  # instructions for integrating with travis-ci
+  echo "1. Create a new GitHub API token"
+  echo "2. Encrypt the token using the 'travis' ruby gem (gem install travis)"
+  echo "3. Copy/Paste the token into the '- secure' bit at the bottom of"
+  echo "   your '.travis.yml' file"
+  echo
+  echo "Instructions mostly copied from here:"
+  echo "    https://github.com/steveklabnik/automatically_update_github_pages_with_travis_example#find-out-your-github-api-token"
+}
+
 # Parse command line args
 case "$1" in
   build )
@@ -46,6 +58,9 @@ case "$1" in
     ;;
   serve )
     serve
+    ;;
+  travis-auth-help )
+    travis_auth
     ;;
   * )
     help
