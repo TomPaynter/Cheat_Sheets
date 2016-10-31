@@ -7,6 +7,12 @@ uint8_t float_to_string(uint8_t *output, float value, uint8_t dp)
 
 It takes the output string, the float value to print, the number of decimal places to print and it returns the total length of the final string.
 
+Example:
+
+```c
+        output = my_float_to_string(TempString, 123.777, 1);
+```
+
 Source:
 
 ```c
