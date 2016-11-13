@@ -10,7 +10,7 @@ It takes the output string, the float value to print, the number of decimal plac
 Example:
 
 ```c
-        output = my_float_to_string(TempString, 123.777, 1);
+        output = float_to_string(TempString, 123.777, 1);
 ```
 
 Source:
