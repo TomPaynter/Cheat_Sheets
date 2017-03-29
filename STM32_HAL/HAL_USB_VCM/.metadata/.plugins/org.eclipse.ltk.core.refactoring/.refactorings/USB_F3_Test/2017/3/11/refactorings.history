@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Move &apos;Drivers&apos; to &apos;USB_F3_Test&apos;" description="Move &apos;Drivers&apos; to &apos;USB_F3_Test&apos;" destination="/USB_F3_Test" element1="/CUBE/Drivers" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1489767028610" updateReferences="true"/>&#x0A;<refactoring comment="Move &apos;Middlewares&apos; to &apos;USB_F3_Test&apos;" description="Move &apos;Middlewares&apos; to &apos;USB_F3_Test&apos;" destination="/USB_F3_Test" element1="/CUBE/Middlewares" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1489767688054" updateReferences="true"/>
+</session>

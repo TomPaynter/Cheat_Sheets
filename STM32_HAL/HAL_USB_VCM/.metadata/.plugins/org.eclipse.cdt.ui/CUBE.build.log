@@ -1,0 +1,27 @@
+01:09:16 **** Incremental Build of configuration Debug for project CUBE ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/CUBE/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/CUBE/Inc" -I/Users/Emmet/STM32Cube/Repository//STM32Cube_FW_F3_V1.7.0/Drivers/STM32F3xx_HAL_Driver/Inc -I/Users/Emmet/STM32Cube/Repository//STM32Cube_FW_F3_V1.7.0/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I/Users/Emmet/STM32Cube/Repository//STM32Cube_FW_F3_V1.7.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I/Users/Emmet/STM32Cube/Repository//STM32Cube_FW_F3_V1.7.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I/Users/Emmet/STM32Cube/Repository//STM32Cube_FW_F3_V1.7.0/Drivers/CMSIS/Device/ST/STM32F3xx/Include -I/Users/Emmet/STM32Cube/Repository//STM32Cube_FW_F3_V1.7.0/Drivers/CMSIS/Include  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:112:4: warning: implicit declaration of function 'CDC_Transmit_FS' [-Wimplicit-function-declaration]
+    CDC_Transmit_FS(testDataToSend, 8);
+    ^
+Finished building: ../Src/main.c
+ 
+Building target: CUBE.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303VCTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "CUBE.elf" @"objects.list"  
+Finished building target: CUBE.elf
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "CUBE.elf" "CUBE.bin"
+arm-none-eabi-size "CUBE.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13372	    352	   4120	  17844	   45b4	CUBE.elf
+ 
+
+01:09:17 Build Finished (took 557ms)
+

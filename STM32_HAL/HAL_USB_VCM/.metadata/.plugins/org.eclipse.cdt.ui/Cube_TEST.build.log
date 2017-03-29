@@ -1,0 +1,303 @@
+01:36:16 **** Incremental Build of configuration Debug for project Cube_TEST ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:106:6: warning: implicit declaration of function 'CDC_Transmit_FS' [-Wimplicit-function-declaration]
+      CDC_Transmit_FS(testDataToSend, 8);
+      ^
+../Src/main.c: At top level:
+../Src/main.c:166:13: warning: 'MX_CAN_Init' defined but not used [-Wunused-function]
+ static void MX_CAN_Init(void)
+             ^
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/stm32f3xx_hal_msp.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f3xx_hal_msp.d" -MT"Src/stm32f3xx_hal_msp.o" -o "Src/stm32f3xx_hal_msp.o" "../Src/stm32f3xx_hal_msp.c"
+Finished building: ../Src/stm32f3xx_hal_msp.c
+ 
+Building file: ../Src/stm32f3xx_it.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f3xx_it.d" -MT"Src/stm32f3xx_it.o" -o "Src/stm32f3xx_it.o" "../Src/stm32f3xx_it.c"
+Finished building: ../Src/stm32f3xx_it.c
+ 
+Building file: ../Src/system_stm32f3xx.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/system_stm32f3xx.d" -MT"Src/system_stm32f3xx.o" -o "Src/system_stm32f3xx.o" "../Src/system_stm32f3xx.c"
+Finished building: ../Src/system_stm32f3xx.c
+ 
+Building file: ../Src/usb_device.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/usb_device.d" -MT"Src/usb_device.o" -o "Src/usb_device.o" "../Src/usb_device.c"
+Finished building: ../Src/usb_device.c
+ 
+Building file: ../Src/usbd_cdc_if.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/usbd_cdc_if.d" -MT"Src/usbd_cdc_if.o" -o "Src/usbd_cdc_if.o" "../Src/usbd_cdc_if.c"
+Finished building: ../Src/usbd_cdc_if.c
+ 
+Building file: ../Src/usbd_conf.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/usbd_conf.d" -MT"Src/usbd_conf.o" -o "Src/usbd_conf.o" "../Src/usbd_conf.c"
+Finished building: ../Src/usbd_conf.c
+ 
+Building file: ../Src/usbd_desc.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/usbd_desc.d" -MT"Src/usbd_desc.o" -o "Src/usbd_desc.o" "../Src/usbd_desc.c"
+../Src/usbd_desc.c: In function 'USBD_FS_ProductStrDescriptor':
+../Src/usbd_desc.c:73:36: warning: pointer targets in passing argument 1 of 'USBD_GetString' differ in signedness [-Wpointer-sign]
+ #define USBD_PRODUCT_STRING_FS     "STM32 Virtual ComPort"
+                                    ^
+../Src/usbd_desc.c:214:21: note: in expansion of macro 'USBD_PRODUCT_STRING_FS'
+     USBD_GetString (USBD_PRODUCT_STRING_FS, USBD_StrDesc, length);
+                     ^
+In file included from /Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:40:0,
+                 from ../Src/usbd_desc.c:46:
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:93:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void USBD_GetString         (uint8_t *desc, uint8_t *unicode, uint16_t *len);
+      ^
+../Src/usbd_desc.c:73:36: warning: pointer targets in passing argument 1 of 'USBD_GetString' differ in signedness [-Wpointer-sign]
+ #define USBD_PRODUCT_STRING_FS     "STM32 Virtual ComPort"
+                                    ^
+../Src/usbd_desc.c:218:21: note: in expansion of macro 'USBD_PRODUCT_STRING_FS'
+     USBD_GetString (USBD_PRODUCT_STRING_FS, USBD_StrDesc, length);    
+                     ^
+In file included from /Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:40:0,
+                 from ../Src/usbd_desc.c:46:
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:93:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void USBD_GetString         (uint8_t *desc, uint8_t *unicode, uint16_t *len);
+      ^
+../Src/usbd_desc.c: In function 'USBD_FS_ManufacturerStrDescriptor':
+../Src/usbd_desc.c:71:38: warning: pointer targets in passing argument 1 of 'USBD_GetString' differ in signedness [-Wpointer-sign]
+ #define USBD_MANUFACTURER_STRING     "STMicroelectronics"
+                                      ^
+../Src/usbd_desc.c:232:19: note: in expansion of macro 'USBD_MANUFACTURER_STRING'
+   USBD_GetString (USBD_MANUFACTURER_STRING, USBD_StrDesc, length);
+                   ^
+In file included from /Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:40:0,
+                 from ../Src/usbd_desc.c:46:
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:93:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void USBD_GetString         (uint8_t *desc, uint8_t *unicode, uint16_t *len);
+      ^
+../Src/usbd_desc.c: In function 'USBD_FS_SerialStrDescriptor':
+../Src/usbd_desc.c:74:41: warning: pointer targets in passing argument 1 of 'USBD_GetString' differ in signedness [-Wpointer-sign]
+ #define USBD_SERIALNUMBER_STRING_FS     "00000000001A"
+                                         ^
+../Src/usbd_desc.c:247:21: note: in expansion of macro 'USBD_SERIALNUMBER_STRING_FS'
+     USBD_GetString (USBD_SERIALNUMBER_STRING_FS, USBD_StrDesc, length);
+                     ^
+In file included from /Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:40:0,
+                 from ../Src/usbd_desc.c:46:
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:93:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void USBD_GetString         (uint8_t *desc, uint8_t *unicode, uint16_t *len);
+      ^
+../Src/usbd_desc.c:74:41: warning: pointer targets in passing argument 1 of 'USBD_GetString' differ in signedness [-Wpointer-sign]
+ #define USBD_SERIALNUMBER_STRING_FS     "00000000001A"
+                                         ^
+../Src/usbd_desc.c:251:21: note: in expansion of macro 'USBD_SERIALNUMBER_STRING_FS'
+     USBD_GetString (USBD_SERIALNUMBER_STRING_FS, USBD_StrDesc, length);    
+                     ^
+In file included from /Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:40:0,
+                 from ../Src/usbd_desc.c:46:
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:93:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void USBD_GetString         (uint8_t *desc, uint8_t *unicode, uint16_t *len);
+      ^
+../Src/usbd_desc.c: In function 'USBD_FS_ConfigStrDescriptor':
+../Src/usbd_desc.c:75:42: warning: pointer targets in passing argument 1 of 'USBD_GetString' differ in signedness [-Wpointer-sign]
+ #define USBD_CONFIGURATION_STRING_FS     "CDC Config"
+                                          ^
+../Src/usbd_desc.c:267:21: note: in expansion of macro 'USBD_CONFIGURATION_STRING_FS'
+     USBD_GetString (USBD_CONFIGURATION_STRING_FS, USBD_StrDesc, length);
+                     ^
+In file included from /Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:40:0,
+                 from ../Src/usbd_desc.c:46:
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:93:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void USBD_GetString         (uint8_t *desc, uint8_t *unicode, uint16_t *len);
+      ^
+../Src/usbd_desc.c:75:42: warning: pointer targets in passing argument 1 of 'USBD_GetString' differ in signedness [-Wpointer-sign]
+ #define USBD_CONFIGURATION_STRING_FS     "CDC Config"
+                                          ^
+../Src/usbd_desc.c:271:21: note: in expansion of macro 'USBD_CONFIGURATION_STRING_FS'
+     USBD_GetString (USBD_CONFIGURATION_STRING_FS, USBD_StrDesc, length); 
+                     ^
+In file included from /Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:40:0,
+                 from ../Src/usbd_desc.c:46:
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:93:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void USBD_GetString         (uint8_t *desc, uint8_t *unicode, uint16_t *len);
+      ^
+../Src/usbd_desc.c: In function 'USBD_FS_InterfaceStrDescriptor':
+../Src/usbd_desc.c:76:38: warning: pointer targets in passing argument 1 of 'USBD_GetString' differ in signedness [-Wpointer-sign]
+ #define USBD_INTERFACE_STRING_FS     "CDC Interface"
+                                      ^
+../Src/usbd_desc.c:287:21: note: in expansion of macro 'USBD_INTERFACE_STRING_FS'
+     USBD_GetString (USBD_INTERFACE_STRING_FS, USBD_StrDesc, length);
+                     ^
+In file included from /Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:40:0,
+                 from ../Src/usbd_desc.c:46:
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:93:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void USBD_GetString         (uint8_t *desc, uint8_t *unicode, uint16_t *len);
+      ^
+../Src/usbd_desc.c:76:38: warning: pointer targets in passing argument 1 of 'USBD_GetString' differ in signedness [-Wpointer-sign]
+ #define USBD_INTERFACE_STRING_FS     "CDC Interface"
+                                      ^
+../Src/usbd_desc.c:291:21: note: in expansion of macro 'USBD_INTERFACE_STRING_FS'
+     USBD_GetString (USBD_INTERFACE_STRING_FS, USBD_StrDesc, length);
+                     ^
+In file included from /Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:40:0,
+                 from ../Src/usbd_desc.c:46:
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:93:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void USBD_GetString         (uint8_t *desc, uint8_t *unicode, uint16_t *len);
+      ^
+Finished building: ../Src/usbd_desc.c
+ 
+Building file: ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o" -o "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o" "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c"
+Finished building: ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c
+ 
+Building file: ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o" -o "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o" "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c"
+Finished building: ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c
+ 
+Building file: ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o" -o "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o" "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c"
+Finished building: ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c
+ 
+Building file: ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o" -o "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o" "../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c"
+Finished building: ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c
+ 
+Building file: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o" -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o" "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c"
+Finished building: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c
+ 
+Building file: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.o" -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.o" "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c"
+Finished building: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c
+ 
+Building file: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o" -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o" "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c"
+Finished building: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c
+ 
+Building file: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.o" -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.o" "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c"
+Finished building: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c
+ 
+Building file: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.o" -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.o" "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c"
+Finished building: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c
+ 
+Building file: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.o" -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.o" "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.c"
+Finished building: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.c
+ 
+Building file: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.o" -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.o" "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c"
+Finished building: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c
+ 
+Building file: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.o" -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.o" "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c"
+Finished building: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c
+ 
+Building file: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.o" -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.o" "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.c"
+Finished building: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.c
+ 
+Building file: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pcd.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pcd.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pcd.o" -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pcd.o" "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pcd.c"
+Finished building: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pcd.c
+ 
+Building file: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pcd_ex.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pcd_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pcd_ex.o" -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pcd_ex.o" "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pcd_ex.c"
+Finished building: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pcd_ex.c
+ 
+Building file: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.o" -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.o" "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c"
+Finished building: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c
+ 
+Building file: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.o" -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.o" "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c"
+Finished building: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c
+ 
+Building file: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.o" -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.o" "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c"
+Finished building: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c
+ 
+Building file: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.o" -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.o" "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c"
+Finished building: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c
+ 
+Building file: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.o" -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.o" "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.c"
+Finished building: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.c
+ 
+Building file: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.c
+Invoking: MCU GCC Compiler
+/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F303xC -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/Cube_TEST/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.o" -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.o" "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.c"
+Finished building: ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.c
+ 
+Building target: Cube_TEST.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303VCTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Cube_TEST.elf" @"objects.list"  
+Finished building target: Cube_TEST.elf
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Cube_TEST.elf" "Cube_TEST.bin"
+arm-none-eabi-size "Cube_TEST.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13400	    352	   4120	  17872	   45d0	Cube_TEST.elf
+ 
+
+01:36:27 Build Finished (took 11s.312ms)
+

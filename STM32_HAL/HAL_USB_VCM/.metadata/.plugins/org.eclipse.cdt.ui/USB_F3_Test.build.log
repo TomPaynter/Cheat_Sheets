@@ -1,0 +1,11 @@
+00:40:37 **** Incremental Build of configuration Debug for project USB_F3_Test ****
+make all 
+Building target: USB_F3_Test.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -L"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/stm32f3discovery_hal_lib/Debug" -T"/Users/Emmet/Projects/Cheat_Sheets/STM32_HAL/HAL_USB_VCM/USB_F3_Test/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "USB_F3_Test.elf" @"objects.list"  -lstm32f3discovery_hal_lib
+/usr/local/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/bin/ld: cannot find -lstm32f3discovery_hal_lib
+collect2: error: ld returned 1 exit status
+make: *** [USB_F3_Test.elf] Error 1
+
+00:40:37 Build Finished (took 134ms)
+
