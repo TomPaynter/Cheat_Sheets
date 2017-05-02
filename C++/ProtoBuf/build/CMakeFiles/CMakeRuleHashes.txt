@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+0b4542c16a7382a040fa5d961adcffab partbook.pb.cc

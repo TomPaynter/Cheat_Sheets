@@ -1,0 +1,12 @@
+//partbook.proto
+
+option optimize_for = LITE_RUNTIME;
+
+package tutorial;
+
+message Part {
+  required string name = 1;
+  required int32 partid = 2;        // Unique ID number for this part
+  optional string vendor = 3;
+
+}
