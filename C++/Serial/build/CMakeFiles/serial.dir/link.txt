@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libserial.a  CMakeFiles/serial.dir/serial/src/serial.cc.o CMakeFiles/serial.dir/serial/src/impl/unix.cc.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libserial.a

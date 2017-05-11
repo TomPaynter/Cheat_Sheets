@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../serial/include/serial/serial.h
+limits
+-
+vector
+-
+string
+-
+cstring
+-
+sstream
+-
+exception
+-
+stdexcept
+-
+serial/v8stdint.h
+-
+
+../serial/include/serial/v8stdint.h
+stddef.h
+-
+stdio.h
+-
+stdint.h
+-
+
+/Users/Emmet/Projects/Cheat_Sheets/C++/Serial/transmit.cpp
+string
+-
+iostream
+-
+cstdio
+-
+unistd.h
+-
+../serial/serial.h
+/Users/Emmet/Projects/Cheat_Sheets/C++/serial/serial.h
+

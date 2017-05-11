@@ -1,0 +1,8 @@
+syntax = "proto3";
+package can;
+
+message CanPacket {
+  uint64 timestamp = 1;
+  uint32  id = 2;
+  repeated uint32 data = 3;
+}
