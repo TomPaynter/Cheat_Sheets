@@ -103,6 +103,14 @@ And then to import a file:
 ```
 \lstinputlisting[language=Matlab, frame=single]{../checkFilter.m}
 ```
+Or just write some:
+```
+\begin{lstlisting}[frame=single]
+>>> Ex2.m
+biggus dickus
+>>>
+\end{lstlisting}
+```
 
 For Matlab Colours:
 ```
