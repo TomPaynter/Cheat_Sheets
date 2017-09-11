@@ -1,0 +1,6 @@
+#!/bin/bash
+while :
+do
+  tail $2
+	sleep $1
+done
