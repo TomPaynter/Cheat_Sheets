@@ -1,0 +1,19 @@
+project (project)
+
+cmake_minimum_required(VERSION 3.5)
+
+file(GLOB_RECURSE SRC_SOURCES "${PROJECT_SOURCE_DIR}/*/*.cpp" "${PROJECT_SOURCE_DIR}/*/*.c" "${PROJECT_SOURCE_DIR}/*.cpp" "${PROJECT_SOURCE_DIR}/*.c")
+file(GLOB_RECURSE SRC_HEADERS "${PROJECT_SOURCE_DIR}/*.h" "${PROJECT_SOURCE_DIR}/ */*.h")
+
+set (SRC_INCLUDE_DIRS "")
+foreach (_headerFile ${SRC_HEADERS})
+    get_filename_component(_dir ${_headerFile} PATH)
+    list (APPEND SRC_INCLUDE_DIRS ${_dir})
+endforeach()
+list(REMOVE_DUPLICATES SRC_INCLUDE_DIRS)
+
+file(GLOB_RECURSE REMOVE_CMAKE "${PROJECT_BINARY_DIR}/*")
+list(REMOVE_ITEM SRC_SOURCES ${REMOVE_CMAKE})
+
+include_directories(${SRC_INCLUDE_DIRS})
+add_executable(project ${LIB_SOURCES} ${SRC_SOURCES})
